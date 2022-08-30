@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Order pizza</h1>
+    <select class="select">
+        <option value="thin">Thin</option>
+        <option value="medium">Medium</option>
+        <option value="thick">Thick</option>
+    </select>
+
+    <div class="size">
+        <input class="radio-input" id="check1" type="radio" name="radio">
+        <label class="label-size" for="check1">25cm</label>
+        <input class="radio-input" id="check2" type="radio" name="radio">
+        <label class="label-size" for="check2">30cm</label>
+        <input class="radio-input" id="check3" type="radio" name="radio">
+        <label class="label-size" for="check3">35cm</label>
+    </div>
+
+    <div class="extra products">
+        <input class="products-input" id="tomato" type="checkbox">
+        <label for="tomato">tomato</label>
+        <input class="products-input" id="cucumber" type="checkbox">
+        <label for="cucumber">cucumber</label>
+        <input class="products-input" id="sausage" type="checkbox">
+        <label for="sausage">sausage</label>
+    </div>
+
+    <div class="additional">
+        <input id="bitter" type="checkbox">
+        <label for="bitter">Bitter</label>
+        <input id="cheese" type="checkbox">
+        <label for="cheese">Cheese</label>
+    </div>
+
+    <hr>
+
+    <div class="value-wrapper">
+        <div class="value-thickness">
+            <b>Bread: </b> <span id="thickness"></span>
+        </div>
+        <div class="value-size">
+            <b>Size: </b> <span id="size"></span>
+        </div>
+        <div class="value-products">
+            <b>Products: </b> <p id="products"></p>
+        </div>
+        <div class="value-additional">
+            <b>Additional: </b> <p id="additional"></p>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
